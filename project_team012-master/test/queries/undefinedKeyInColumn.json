@@ -1,0 +1,18 @@
+{
+    "title": "Undefined Key In Columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "*"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+    "title": "'GT' is a number instead of an object",
+    "query": {
+        "WHERE": {
+            "GT": 123
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

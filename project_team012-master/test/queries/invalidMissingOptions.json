@@ -1,0 +1,9 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Simple usage of 'NOT'",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "maxSeats"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

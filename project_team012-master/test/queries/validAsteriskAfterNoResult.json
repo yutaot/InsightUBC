@@ -1,0 +1,20 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": "abcdef*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title"
+            ],
+            "ORDER": "courses_title"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+	
+	]
+}

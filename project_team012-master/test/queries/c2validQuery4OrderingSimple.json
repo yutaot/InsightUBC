@@ -1,0 +1,28 @@
+{
+    "title": "Simple usage of 'NOT'",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 140
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ],
+            "ORDER":
+                "rooms_shortname"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"rooms_shortname":"ANGU"},{"rooms_shortname":"CHBE"},{"rooms_shortname":"DMP"},{"rooms_shortname":"FRDM"},{"rooms_shortname":"HEBB"},{"rooms_shortname":"IBLC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSK"},{"rooms_shortname":"LSK"},{"rooms_shortname":"OSBO"},{"rooms_shortname":"PHRM"},{"rooms_shortname":"PHRM"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"}]
+}

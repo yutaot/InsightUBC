@@ -1,0 +1,13 @@
+{
+    "title": "SELECT less than",
+    "query": {
+        "WHERE": {
+			"GT": {
+				"courses_avg": 99
+			}
+        },
+        "OPTIONS": 99
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

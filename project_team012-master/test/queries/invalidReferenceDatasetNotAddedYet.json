@@ -1,0 +1,19 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "c_avg": 80
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "c_dept",
+				"c_avg"
+            ],
+            "ORDER": "c_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Referencng a Dataset that's an empty string (invalid id)",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "_dept",
+                "_avg"
+            ],
+            "ORDER": "_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

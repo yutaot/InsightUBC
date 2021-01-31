@@ -1,0 +1,19 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+		"WHERE": {
+			"EQ": {
+				"courses_avg": 80
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_",
+				"courses_"
+			],
+			"ORDER": "courses_"
+		}
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

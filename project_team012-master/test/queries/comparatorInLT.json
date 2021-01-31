@@ -1,0 +1,19 @@
+{
+    "title": "Invalid comparator key 'AND' in 'LT'",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "AND": [
+                    "courses_avg"
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

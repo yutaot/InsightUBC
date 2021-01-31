@@ -1,0 +1,28 @@
+{
+    "title": "Simple usage of 'NOT'",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "maxSeats"
+            ],
+            "ORDER":
+            "abc_"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

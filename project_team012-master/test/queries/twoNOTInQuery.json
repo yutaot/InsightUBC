@@ -1,0 +1,26 @@
+{
+    "title": "Two 'NOT' in one query",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "LT": {
+                    "courses_avg": 100
+                }
+            },
+            "NOT": {
+                "GT": {
+                    "courses_avg": -1
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

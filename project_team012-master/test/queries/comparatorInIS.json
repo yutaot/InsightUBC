@@ -1,0 +1,19 @@
+{
+    "title": "Invalid comparator key 'AND' in 'IS'",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "AND": [
+                    "courses_avg"
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

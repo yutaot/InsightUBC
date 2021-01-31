@@ -1,0 +1,22 @@
+{
+    "title": "Two 'GT' in one query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            },
+            "GT": {
+                "courses_avg": 100
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

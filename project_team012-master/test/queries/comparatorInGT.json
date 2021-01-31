@@ -1,0 +1,19 @@
+{
+    "title": "Invalid comparator key 'AND' in 'GT'",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "AND": [
+                    "courses_avg"
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_audit": 1000
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+	]
+}

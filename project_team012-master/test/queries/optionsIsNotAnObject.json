@@ -1,0 +1,13 @@
+{
+    "title": "'OPTIONS' is a number and not an object",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": 123
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

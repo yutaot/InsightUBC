@@ -1,0 +1,31 @@
+{
+    "title": "Simple usage of 'NOT'",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxSeats"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "maxSeats": {
+                        "COUNT": "rooms_shortname"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1},{"maxSeats":1}]
+}

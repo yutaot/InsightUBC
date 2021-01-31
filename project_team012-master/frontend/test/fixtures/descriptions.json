@@ -1,0 +1,13 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "emptyQuery": "nothing selected",
+    "simpleQuery": "a",
+    "1WhereAnd1Column": "blah",
+    "Not": "aaa",
+    "Order": "aaaaa",
+    "2Order": "bbb",
+    "transform1": "asdawda",
+    "roomsComplex": "awdawdawds",
+    "transform2": "awdawdwa",
+    "checkCoursesIDIsStr": "Checks if courses_id is converted into a number or string, should be a string"
+}

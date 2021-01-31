@@ -1,0 +1,13 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

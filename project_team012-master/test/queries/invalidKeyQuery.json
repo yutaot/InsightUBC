@@ -1,0 +1,19 @@
+{
+    "title": "Invalid value type in IS",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses__avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses__dept",
+                "courses__avg"
+            ],
+            "ORDER": "courses__avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

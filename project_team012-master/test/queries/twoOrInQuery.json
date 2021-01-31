@@ -1,0 +1,30 @@
+{
+    "title": "Two 'AND' in one query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                }
+            ],
+            "OR": [
+                {
+                    "EQ": {
+                        "courses_avg": 101
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

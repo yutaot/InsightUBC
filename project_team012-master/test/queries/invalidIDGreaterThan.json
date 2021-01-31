@@ -1,0 +1,18 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "c_avg": 80
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

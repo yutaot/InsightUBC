@@ -1,0 +1,27 @@
+{
+    "title": "Two 'Options' in one query",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 101
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_avg",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

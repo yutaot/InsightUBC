@@ -1,0 +1,16 @@
+{
+    "title": "COLUMNS is 123 instead of an array",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": 50
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": 123,
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

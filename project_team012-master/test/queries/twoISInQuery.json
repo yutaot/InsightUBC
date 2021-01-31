@@ -1,0 +1,22 @@
+{
+    "title": "Two 'IS' in one query",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": "-123"
+            },
+            "IS": {
+                "courses_id": "-123"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

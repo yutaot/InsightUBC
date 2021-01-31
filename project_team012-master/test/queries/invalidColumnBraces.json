@@ -1,0 +1,19 @@
+{
+    "title": "SELECT less than",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": {
+                "courses_dept": "cpsc",
+				"courses_avg": 90
+            },
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

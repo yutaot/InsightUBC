@@ -1,0 +1,17 @@
+{
+    "title": "empty object inside AND array",
+    "query": {
+        "WHERE": {
+            "AND": [{}]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,20 @@
+{
+    "title": "OPTIONS has two ORDER in one query",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_title"
+            ],
+            "ORDER": "courses_title",
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

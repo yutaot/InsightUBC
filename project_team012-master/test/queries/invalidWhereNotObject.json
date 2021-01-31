@@ -1,0 +1,16 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": [
+			123
+        ],
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

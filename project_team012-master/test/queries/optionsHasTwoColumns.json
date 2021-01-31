@@ -1,0 +1,22 @@
+{
+    "title": "OPTIONS has two COLUMNS in one query",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_title"
+            ],
+            "COLUMNS":[
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

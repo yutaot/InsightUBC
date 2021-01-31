@@ -1,0 +1,29 @@
+{
+    "title": "SELECT less than",
+    "query": {
+        "WHERE": {
+			"AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 100
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_avg": 1
+                            }
+                        }
+                    ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+	]
+}

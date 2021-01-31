@@ -1,0 +1,12 @@
+{
+    "title": "'COLUMNS' is an empty array",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

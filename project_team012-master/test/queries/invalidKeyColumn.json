@@ -1,0 +1,19 @@
+{
+    "title": "Too Large",
+    "query": {
+        "WHERE": {
+			"GT": {
+				"courses_avg": 99
+			}
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_nothing"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

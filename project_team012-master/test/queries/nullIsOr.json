@@ -1,0 +1,17 @@
+{
+    "title": "Null is inside WHERE",
+    "query": {
+        "WHERE": {
+            "OR": null
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

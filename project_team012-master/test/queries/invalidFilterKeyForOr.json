@@ -1,0 +1,22 @@
+{
+    "title": "'gt' is used in 'OR'",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "gt": {
+                        "courses_avg": 90
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,15 @@
+{
+    "query1":{"WHERE": {"IS": {"courses_dept": "cpsc"} }, "OPTIONS": {"COLUMNS": ["courses_dept", "courses_id"], "ORDER": "courses_id"} },
+    "emptyQuery": {},
+    "simpleQuery": {"WHERE": {"AND": [{"IS": {"courses_dept": "cpsc"}}, {"GT": {"courses_avg": 80}} , {"LT": {"courses_fail": 10}}]}, "OPTIONS": {"COLUMNS": ["courses_avg"], "ORDER":  "courses_avg"}},
+    "1WhereAnd1Column": {"WHERE": {"EQ": {"courses_avg": 80}}, "OPTIONS": {"COLUMNS": ["courses_avg"]}},
+    "Not": {"WHERE": {"NOT": {"LT": {"courses_avg": 99}}}, "OPTIONS": {"COLUMNS": ["courses_avg"]}},
+    "Order": {"WHERE": {"NOT": {"LT": {"courses_avg": 99}}}, "OPTIONS": {"COLUMNS": ["courses_avg", "courses_id"], "ORDER": {"dir":  "DOWN",
+        "keys": ["courses_id"]}}},
+    "2Order": {"WHERE": {"NOT": {"LT": {"courses_avg": 99}}}, "OPTIONS": {"COLUMNS": ["courses_avg", "courses_id"], "ORDER": {"dir":  "UP",
+        "keys": ["courses_avg", "courses_id"]}}},
+    "transform1": {"WHERE": {}, "OPTIONS": {"COLUMNS": ["courses_title", "overallAvg"]}, "TRANSFORMATIONS": {"GROUP": ["courses_title"], "APPLY": [{"overallAvg": {"AVG": "courses_avg"}}]}},
+    "roomsComplex": {"WHERE": {"AND": [{"IS": {"rooms_furniture": "*Tables*"}}, {"GT": {"rooms_seats": 300}}]}, "OPTIONS": {"COLUMNS": ["rooms_shortname", "maxSeats"], "ORDER": {"dir": "DOWN", "keys": ["maxSeats"]}}, "TRANSFORMATIONS": {"GROUP": ["rooms_shortname"], "APPLY": [{"maxSeats": {"MAX": "rooms_seats"}}]}},
+    "transform2": {"WHERE": {}, "OPTIONS": {"COLUMNS": ["rooms_shortname"], "ORDER": {"dir": "DOWN", "keys": ["rooms_type"]}}, "TRANSFORMATIONS": {"GROUP": ["rooms_shortname"], "APPLY": [{"": {"MAX": "rooms_seats"}}]}},
+    "checkCoursesIDIsStr": {"WHERE": {"IS": {"courses_id":  "310"}}, "OPTIONS": {"COLUMNS":  ["courses_id"]}}
+}

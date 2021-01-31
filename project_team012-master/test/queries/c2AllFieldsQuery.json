@@ -1,0 +1,72 @@
+{
+    "title": "Simple usage of 'NOT'",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_fullname": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_shortname": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_number": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_name": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_address": "*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_lat": -1000
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_lon": -1000
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 100
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_type": "*"
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_href": "*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"rooms_shortname":"AERL"},{"rooms_shortname":"ANGU"},{"rooms_shortname":"BIOL"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"BUCH"},{"rooms_shortname":"CHBE"},{"rooms_shortname":"CHEM"},{"rooms_shortname":"CHEM"},{"rooms_shortname":"CHEM"},{"rooms_shortname":"CHEM"},{"rooms_shortname":"CIRS"},{"rooms_shortname":"DMP"},{"rooms_shortname":"DMP"},{"rooms_shortname":"ESB"},{"rooms_shortname":"ESB"},{"rooms_shortname":"FRDM"},{"rooms_shortname":"FSC"},{"rooms_shortname":"GEOG"},{"rooms_shortname":"HEBB"},{"rooms_shortname":"HENN"},{"rooms_shortname":"HENN"},{"rooms_shortname":"HENN"},{"rooms_shortname":"IBLC"},{"rooms_shortname":"IBLC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSK"},{"rooms_shortname":"LSK"},{"rooms_shortname":"MATH"},{"rooms_shortname":"MATX"},{"rooms_shortname":"MCLD"},{"rooms_shortname":"MCLD"},{"rooms_shortname":"MCML"},{"rooms_shortname":"OSBO"},{"rooms_shortname":"PHRM"},{"rooms_shortname":"PHRM"},{"rooms_shortname":"SCRF"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SRC"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"SWNG"},{"rooms_shortname":"WESB"},{"rooms_shortname":"WESB"},{"rooms_shortname":"WOOD"},{"rooms_shortname":"WOOD"},{"rooms_shortname":"WOOD"},{"rooms_shortname":"WOOD"},{"rooms_shortname":"WOOD"}]
+}

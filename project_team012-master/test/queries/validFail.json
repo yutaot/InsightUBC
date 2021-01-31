@@ -1,0 +1,20 @@
+{
+    "title": "SELECT equal to",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_fail": 100
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+    {"courses_dept":"comm"},{"courses_dept":"math"},{"courses_dept":"math"},{"courses_dept":"math"},{"courses_dept":"math"}
+	]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Negative Value for the Comparator",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": -123
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

@@ -1,0 +1,17 @@
+{
+    "title": "'WHERE' is a number instead of an object",
+    "query": {
+        "WHERE": [
+            "courses_dept"
+        ],
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": 123
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
